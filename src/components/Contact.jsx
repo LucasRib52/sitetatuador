@@ -91,8 +91,8 @@ export default function Contact() {
               onClick={startWhatsAppChat}
               className="btn btn-lg rounded-full shadow-xl transform transition-transform duration-300 ease-in-out hover:scale-110"
               style={{
-                padding: '2rem 4rem',
-                fontSize: '2rem',
+                padding: '1rem 2rem', // Ajuste de padding para caber em telas menores
+                fontSize: '1.5rem', // Ajuste de tamanho de fonte para caber em telas menores
                 backgroundColor: '#25D366', // Cor do WhatsApp
                 color: 'white',
                 display: 'flex',
@@ -101,10 +101,11 @@ export default function Contact() {
                 border: 'none',
                 cursor: 'pointer',
                 boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
+                whiteSpace: 'nowrap', // Garantir que o texto não quebre em várias linhas
               }}
             >
-              <FaWhatsapp size={36} className="mr-4" />
-              Fale Conosco no WhatsApp
+              <FaWhatsapp size={24} className="mr-2" />
+              <span>Fale Conosco no WhatsApp</span>
             </button>
           </motion.div>
         </div>
